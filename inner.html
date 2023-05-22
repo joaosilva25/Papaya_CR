@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="code.css">
     <title>Papaya</title>
 </head>
@@ -15,17 +15,33 @@
                 <div class="space_text d-flex flex-column align-items-center">
                     <h3>Take your time<br> make big things</h3>
                     <h1>Papaya</h1>
-                <button class="time">Be a Productive Papaya</button>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown link
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
                 </div>
             </div>
             <div class="col-6 display d-flex flex-column justify-content-center align-items-center">
                 <div class="watch">
-                    <h2>...</h2>
+                    <h2>0:00</h2>
                 </div>
                 <div class="option d-flex justify-content-center">
-                    <button type="button" onclick="clock()">Start</button>
-                    <button type="button" onclick="pausar()">Pause</button>
-                    <button type="button" onclick="restart()">Restart</button>
+                    <button class="play" type="button" onclick="iniciar()">
+                        <ion-icon name="play-outline"></ion-icon>
+                    </button>
+                    <button type="button" onclick="dispar()">
+                        <ion-icon name="pause-outline"></ion-icon>
+                    </button>
+                    <button class="res" type="button" onclick="restart()">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
                 </div>
             </div>
         </div>
@@ -55,8 +71,13 @@
 
     </div>
 
-
+    <footer class="copy">
+        <p>Copywright ® 2023 All rights reserved This project he has created by João Vitor Da Silva Pinto</p>
+    </footer>
+    <script type="text/javascript" src="assets/js/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="code.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
